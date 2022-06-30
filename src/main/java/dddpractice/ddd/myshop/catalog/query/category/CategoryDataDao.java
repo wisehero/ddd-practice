@@ -1,4 +1,4 @@
-package dddpractice.ddd.myshop.catalog.query;
+package dddpractice.ddd.myshop.catalog.query.category;
 
 import java.util.List;
 import java.util.Optional;

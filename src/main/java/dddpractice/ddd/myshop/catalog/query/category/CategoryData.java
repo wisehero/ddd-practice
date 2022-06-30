@@ -1,4 +1,4 @@
-package dddpractice.ddd.myshop.catalog.query;
+package dddpractice.ddd.myshop.catalog.query.category;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
