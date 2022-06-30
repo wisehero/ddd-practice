@@ -1,4 +1,7 @@
 package dddpractice.ddd.myshop.order.command.domain;
 
-public class OrderService {
+import dddpractice.ddd.myshop.member.command.domain.MemberId;
+
+public interface OrderService {
+	Orderer createOrderer(MemberId ordererMemberId);
 }

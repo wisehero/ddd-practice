@@ -1,4 +1,5 @@
 package dddpractice.ddd.myshop.order.command.domain;
 
-public class CancelPolicy {
+public interface CancelPolicy {
+	boolean hasCancellationPermission(Order order, Canceller canceller);
 }
