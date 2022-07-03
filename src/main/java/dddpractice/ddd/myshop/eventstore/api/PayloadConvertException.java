@@ -1,4 +1,4 @@
-package dddpractice.ddd.myshop.eventstore;
+package dddpractice.ddd.myshop.eventstore.api;
 
 public class PayloadConvertException extends RuntimeException {
 
