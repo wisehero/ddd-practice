@@ -95,7 +95,7 @@ public class Order {
 		}
 	}
 
-	private boolean isNotYetShipped() {
+	public boolean isNotYetShipped() {
 		return state == OrderState.PAYMENT_WAITING || state == OrderState.PREPARING;
 	}
 
