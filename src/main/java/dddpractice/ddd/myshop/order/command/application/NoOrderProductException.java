@@ -1,4 +1,13 @@
 package dddpractice.ddd.myshop.order.command.application;
 
-public class NoOrderProductException {
+public class NoOrderProductException extends RuntimeException {
+	private String productId;
+
+	public NoOrderProductException(String productId) {
+		this.productId = productId;
+	}
+
+	public String getProductId() {
+		return productId;
+	}
 }

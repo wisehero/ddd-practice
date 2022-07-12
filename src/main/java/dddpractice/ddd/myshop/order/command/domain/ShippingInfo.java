@@ -5,19 +5,17 @@ import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
-import javax.persistence.EmbeddedId;
 
 import dddpractice.ddd.myshop.common.model.Address;
 
 @Embeddable
 public class ShippingInfo {
-	@EmbeddedId
+	@Embedded
 	@AttributeOverrides({
 		@AttributeOverride(name = "zipCode", column = @Column(name = "shipping_zip_code")),
 		@AttributeOverride(name = "address1", column = @Column(name = "shipping_addr1")),
 		@AttributeOverride(name = "address2", column = @Column(name = "shipping_addr2"))
 	})
-	@Embedded
 	private Address address;
 	@Column(name = "shipping_message")
 	private String message;

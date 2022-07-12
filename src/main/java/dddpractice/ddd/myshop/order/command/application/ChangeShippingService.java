@@ -22,6 +22,5 @@ public class ChangeShippingService {
 	public void changeShipping(ChangeShippingRequest request) {
 		Optional<Order> orderOpt = orderRepository.findById(new OrderNo(request.getNumber()));
 		Order order = orderOpt.orElseThrow(NoOrderException::new);
-
 	}
 }
